@@ -1,24 +1,24 @@
 * Install
-#+begin_src elisp
+#+BEGIN_SRC elisp
   (package-install-file "ert-extras.el")
-#+end_src
+#+END_SRC
 
 * Use
-#+begin_src elisp
+#+BEGIN_SRC elisp
   (require 'ert-extras.el)
-#+end_src
+#+END_SRC
 
 ** ~are~ macro
-#+begin_src elisp
+#+BEGIN_SRC elisp
   (ert-deftest addition-works-as-expected ()
     (are
      (= 2 (+ 1 1))
      (= 5 (+ 2 3))
      (= 23 (+ 17 (* 2 3)))))
-#+end_src
+#+END_SRC
 
 * Test
-#+begin_example
+#+BEGIN_EXAMPLE
   M-x load-file test-ert-extras.el
   M-x ert-run-tests-interactively
-#+end_example
+#+END_EXAMPLE
